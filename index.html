@@ -3,70 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chemie SŠ – FULL APP</title>
-
+<title>Chemie SŠ – Kompletní učebnice + aplikace</title>
 <style>
-:root{
- --bg:#0f172a;
- --card:#1e293b;
- --accent:#38bdf8;
- --text:#e2e8f0;
-}
-body{margin:0;font-family:Arial;background:var(--bg);color:var(--text)}
+body{margin:0;font-family:Arial;background:#0f172a;color:#e2e8f0;line-height:1.6}
 header{background:#020617;padding:20px;text-align:center}
 nav{background:#1e293b;padding:10px;display:flex;flex-wrap:wrap}
 nav a{color:white;margin:8px;text-decoration:none}
 section{padding:25px}
-.box{background:var(--card);padding:20px;border-radius:12px;margin-bottom:20px;transition:0.3s}
-.box:hover{transform:scale(1.02)}
-h2{color:var(--accent)}
-button{padding:10px;background:var(--accent);border:none;cursor:pointer;margin:5px}
+.box{background:#1e293b;padding:20px;border-radius:12px;margin-bottom:20px}
+h2{color:#38bdf8}
+button{padding:10px;background:#38bdf8;border:none;cursor:pointer;margin:5px}
 input{padding:10px;margin:5px}
 </style>
 </head>
 <body>
 
 <header>
-<h1>🔥 Chemie SŠ – FULL aplikace</h1>
-<p>Teorie | Výpočty | Solver | Testy | Interaktivní nástroje</p>
+<h1>🔥 Chemie SŠ – Kompletní učebnice + aplikace</h1>
+<p>Vše v jednom HTML (teorie, definice, výpočty, nástroje)</p>
 </header>
 
 <nav>
 <a href="#atom">Atom</a>
 <a href="#vazby">Vazby</a>
 <a href="#reakce">Reakce</a>
+<a href="#stechio">Stechiometrie</a>
+<a href="#anorganika">Anorganika</a>
 <a href="#organika">Organika</a>
 <a href="#calc">Kalkulačky</a>
-<a href="#solver">Vyčíslování</a>
-<a href="#test">Testy</a>
 </nav>
 
 <section id="atom"><div class="box">
-<h2>⚛️ Atom – kompletní</h2>
-<p>Atom = jádro + obal</p>
-<p>Protony (Z), neutrony (A-Z), elektrony</p>
-<p>Kvantová čísla: n,l,m,s</p>
-<p>Orbitaly: s,p,d,f</p>
-<p>Pauliho princip, Hundovo pravidlo, Aufbau</p>
+<h2>⚛️ Atom – kompletní teorie</h2>
+<p>
+Atom je nejmenší částice chemického prvku, která si zachovává jeho vlastnosti. Skládá se z atomového jádra a elektronového obalu. V jádře se nacházejí protony s kladným nábojem a neutrony bez náboje. Počet protonů určuje protonové číslo prvku, které je klíčové pro jeho zařazení v periodické tabulce.
+
+Elektrony se nacházejí v orbitalech, což jsou oblasti prostoru s vysokou pravděpodobností výskytu elektronu. Jejich chování je popsáno kvantovou mechanikou. Každý elektron je charakterizován čtyřmi kvantovými čísly – hlavním, vedlejším, magnetickým a spinovým.
+
+Orbitaly se označují jako s, p, d a f a mají různé tvary a energie. Zaplňování orbitalů probíhá podle pravidel: Aufbau princip (nejnižší energie první), Pauliho princip (max 2 elektrony s opačným spinem) a Hundovo pravidlo (nejprve se obsazují orbitaly jednotlivě).
+
+Valenční elektrony jsou elektrony ve vnější vrstvě atomu a určují chemické vlastnosti prvku. Prvky se snaží dosáhnout stabilní konfigurace podobné vzácným plynům.
+
+Izotopy jsou atomy stejného prvku s různým počtem neutronů. Mají stejné chemické vlastnosti, ale liší se hmotností.
+</p>
 </div></section>
 
 <section id="vazby"><div class="box">
-<h2>🔗 Vazby</h2>
-<p>Kovalentní, iontová, kovová</p>
-<p>Hybridizace: sp, sp2, sp3</p>
-<p>Polarita, elektronegativita</p>
+<h2>🔗 Chemické vazby – kompletní</h2>
+<p>
+Chemická vazba je interakce, která drží atomy pohromadě. Kovalentní vazba vzniká sdílením elektronů. Iontová vazba vzniká přenosem elektronů mezi atomy. Kovová vazba obsahuje delokalizované elektrony.
+
+Elektronegativita určuje, jak silně atom přitahuje elektrony. Rozdíl elektronegativit určuje typ vazby.
+
+Hybridizace orbitalů vysvětluje tvar molekul. Například sp3 hybridizace vede k tetraedrickému uspořádání.
+
+Mezimolekulové síly zahrnují van der Waalsovy síly a vodíkové vazby. Tyto síly ovlivňují fyzikální vlastnosti látek.
+</p>
 </div></section>
 
 <section id="reakce"><div class="box">
-<h2>⚗️ Reakce</h2>
-<p>Slučování, rozklad, substituce, adice</p>
-<p>Redox: oxidace = -e, redukce = +e</p>
+<h2>⚗️ Chemické reakce – kompletní</h2>
+<p>
+Chemická reakce je proces přeměny látek. Platí zákon zachování hmotnosti.
+
+Typy reakcí: slučování, rozklad, substituce, adice.
+
+Redoxní reakce zahrnují přenos elektronů. Oxidace je ztráta elektronů, redukce je jejich zisk.
+
+Kinetika studuje rychlost reakcí. Rychlost závisí na teplotě, koncentraci a katalyzátorech.
+</p>
+</div></section>
+
+<section id="stechio"><div class="box">
+<h2>📊 Stechiometrie</h2>
+<p>
+Stechiometrie se zabývá výpočty v chemii.
+
+Vzorce:
+</p>
+<ul>
+<li>n = m/M</li>
+<li>c = n/V</li>
+</ul>
+<p>
+Koeficienty v rovnicích určují poměry látek.
+</p>
+</div></section>
+
+<section id="anorganika"><div class="box">
+<h2>🧪 Anorganická chemie</h2>
+<p>
+Oxidy jsou sloučeniny kyslíku.
+Kyseliny obsahují vodík.
+Zásady obsahují OH-.
+Soli vznikají neutralizací.
+</p>
 </div></section>
 
 <section id="organika"><div class="box">
-<h2>🧬 Organika</h2>
-<p>Alkany, alkeny, alkyny, aromáty</p>
-<p>Funkční skupiny: -OH, -COOH, -NH2</p>
+<h2>🧬 Organická chemie</h2>
+<p>
+Organická chemie studuje sloučeniny uhlíku.
+Uhlovodíky: alkany, alkeny, alkyny.
+Deriváty obsahují funkční skupiny.
+</p>
 </div></section>
 
 <section id="calc"><div class="box">
@@ -77,29 +117,11 @@ input{padding:10px;margin:5px}
 
 <input id="m" placeholder="hmotnost">
 <input id="M" placeholder="molární hmotnost">
-<button onclick="ncalc()">n</button>
+<button onclick="ncalc()">Výpočet</button>
 <p id="nout"></p>
 </div></section>
 
-<section id="solver"><div class="box">
-<h2>⚖️ Vyčíslování rovnic (auto)</h2>
-<input id="eq" size="50" placeholder="Fe + O2 = Fe2O3">
-<button onclick="balance()">Vyčíslit</button>
-<p id="out"></p>
-</div></section>
-
-<section id="test"><div class="box">
-<h2>📝 Test (random)</h2>
-<p id="q"></p>
-<button onclick="ans(0)">A</button>
-<button onclick="ans(1)">B</button>
-<button onclick="ans(2)">C</button>
-<p id="res"></p>
-<button onclick="gen()">Další otázka</button>
-</div></section>
-
 <script>
-// prvky
 const el={H:1,O:16,C:12,N:14,S:32,Cl:35.5,Na:23,Ca:40,Fe:56};
 
 function molar(){
@@ -110,45 +132,20 @@ function molar(){
   let e=m[1];let n=m[2]?parseInt(m[2]):1;
   if(el[e]) s+=el[e]*n;
  }
- mout.innerText=s+' g/mol';
+ document.getElementById('mout').innerText='M = '+s+' g/mol';
 }
 
 function ncalc(){
  let m=parseFloat(document.getElementById('m').value);
  let M=parseFloat(document.getElementById('M').value);
- nout.innerText='n='+ (m/M);
-}
-
-// lepší balancer (poměrový základ)
-function balance(){
- let eq=document.getElementById('eq').value.replace(/\s/g,'');
- if(eq==='Fe+O2=Fe2O3'){
-  out.innerText='4Fe + 3O2 = 2Fe2O3';return;
+ if(!isNaN(m)&&!isNaN(M)){
+  document.getElementById('nout').innerText='n = '+(m/M);
+ } else {
+  document.getElementById('nout').innerText='Zadej čísla';
  }
- if(eq==='H2+O2=H2O'){
-  out.innerText='2H2 + O2 = 2H2O';return;
- }
- if(eq==='N2+H2=NH3'){
-  out.innerText='N2 + 3H2 = 2NH3';return;
- }
- out.innerText='Zadej známou rovnici (plný solver by byl extrémně složitý)';
 }
-
-// testy
-const questions=[
- {q:'Kolik má O valenčních e-',a:['2','6','8'],c:1},
- {q:'Co je oxidace?',a:['zisk e-','ztráta e-','nic'],c:1}
-];
-let cur;
-function gen(){
- cur=questions[Math.floor(Math.random()*questions.length)];
- q.innerText=cur.q+' ('+cur.a.join(', ')+')';
-}
-function ans(i){
- res.innerText=i===cur.c?'Správně':'Špatně';
-}
-gen();
 </script>
 
 </body>
 </html>
+
